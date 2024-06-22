@@ -1,0 +1,229 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #14181b;
+    width: 50vmax;
+    border-radius: 10px;
+    height: max-content;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.brand h1 {
+    user-select: false;
+    color: #9c19d0;
+    font-family: "Lucida handwriting";
+}
+
+.container form {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form input {
+    width: 24rem;
+    height: 3.7rem;
+    margin: 8px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #007AFF;
+    transition: 300ms ease-in-out;
+    border-radius: 50px;
+    background-color: beige;
+}
+
+.container form input:hover {
+    background-color: white;
+}
+
+/* #40E0D0 */
+.container form input::placeholder {
+    font-size: 16px;
+}
+
+.container form button {
+    margin-top: 10px;
+}
+
+.container form button:hover {
+    border-radius: 0px;
+    background-color: #550c72;
+}
+
+.container form button:disabled {
+    background-color: #550c72;
+    cursor: not-allowed;
+}
+
+.passAuth {
+    margin-bottom: 10px;
+}
+
+
+.passAuth ul li {
+    font-size: 12px;
+}
+
+.alt {
+    margin-top: 20px;
+}
+
+.alt p {
+    font-size: 12px;
+}
+
+.alt p a {
+    font-size: 14px;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .container form {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .container form input {
+        width: 30rem;
+        height: 5rem;
+    }
+
+    .container form button {
+        font-size: 22px;
+        height: 3rem;
+    }
+
+    .brand img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .brand h1 {
+        font-size: 40px;
+    }
+
+    .alt p {
+        font-size: 16px;
+    }
+
+    .alt p a {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    .container form {
+        justify-content: center;
+    }
+
+    .container form input {
+        width: 25rem;
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container form input {
+        width: 22rem;
+        height: 4rem;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .container form input {
+        width: 20rem;
+        height: 4rem;
+    }
+
+    .brand h1 {
+        font-size: 30px;
+    }
+
+    .brand img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .container form button {
+        height: 2.7rem;
+        width: 6rem;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .container {
+        width: 85%;
+    }
+
+    .container form input {
+        width: 18rem;
+        height: 3.5rem;
+        font-size: 14px;
+    }
+
+    .container form input::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .container form input {
+        width: 13rem;
+        height: 2.8rem;
+    }
+
+    .brand h1 {
+        font-size: 30px;
+    }
+
+    .brand img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .alt p {
+        font-size: 10px;
+    }
+
+    .alt p a {
+        font-size: 12px;
+    }
+
+
+
+    .container form button {
+        width: 6rem;
+        height: 2.3rem;
+        font-size: 18px;
+    }
+}

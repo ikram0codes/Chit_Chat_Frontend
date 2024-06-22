@@ -1,0 +1,196 @@
+.main {
+    overflow: hidden;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+.header span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 3rem;
+    height: 1.8rem;
+    background-color: #007FFF;
+    border-radius: 5px;
+    color: white;
+    font-family: "Sometype Mono", monospace;
+    word-spacing: -7px;
+}
+
+.header h1 {
+    color: #007FFF;
+}
+
+.chats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.profile {
+    padding: 0px 5px;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    border-bottom: 1px solid #23292E;
+}
+
+.img img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.txt {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 5px;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.txt h1 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #007FFF;
+}
+
+.txt p {
+    color: rgb(145, 143, 143);
+    font-size: 12px;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time {
+    width: max-content;
+    font-size: 10px;
+}
+
+.msgCount {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    font-size: 10px;
+    padding: 8px;
+    color: white;
+    background-color: #007FFF;
+    border-radius: 50%;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+}
+
+.sug {
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.sug .head {
+
+    width: 100%;
+    text-align: center;
+    color: #007FFF;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin: 5px;
+}
+
+@media screen and (max-width:1100px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .profile {
+        padding: 0px 0px;
+    }
+
+    .header span {
+        font-size: 16px;
+        padding: 5px 0px;
+        width: 3.5rem;
+        height: 1.6rem;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .txt h1 {
+        font-size: 14px;
+    }
+
+    .txt p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .txt {
+        justify-content: center;
+    }
+
+    .txt h1 {
+        font-size: 12px;
+    }
+
+    .txt p {
+        font-size: 9px;
+    }
+
+    .status .time {
+        font-size: 8px;
+    }
+
+    .status .msgCount {
+        width: 10px;
+        height: 10px;
+        padding: 7px;
+        font-size: 8px;
+    }
+
+    .header span {
+        width: 2rem;
+        height: 1.4rem;
+    }
+}

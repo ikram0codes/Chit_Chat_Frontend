@@ -1,0 +1,119 @@
+.main {
+    width: 100%;
+    background-color: #14181B;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: max-content;
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container button {
+    width: max-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-size: 35px;
+    font-family: "Lucida handwriting";
+    color: #9617c9;
+}
+
+.header img {
+    width: 90px;
+    height: 90px;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    column-gap: 10px;
+}
+
+.message p {
+    width: 20vmax;
+    font-size: 20px;
+    color: white;
+}
+
+
+.message img {
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+    object-position: center;
+    animation-name: ballon;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    transition: 300ms ease-in-out;
+    position: relative;
+}
+
+
+@keyframes ballon {
+    from {
+        top: -20px
+    }
+
+    to {
+        top: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .message img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .message p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        padding: 30px 10px;
+    }
+
+    .message img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .message p {
+        font-size: 16px;
+    }
+}

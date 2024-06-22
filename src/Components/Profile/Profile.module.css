@@ -1,0 +1,251 @@
+.main {
+    width: 100%;
+    background-color: #14181B;
+    height: 100%;
+    display: flex;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.intro img {
+    background-color: #23292E;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro h1 {
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    color: #007FFF;
+}
+
+.intro p {
+    font-size: 14px;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.panel button {
+    font-family: "Sometype Mono", monospace;
+    word-spacing: -5px;
+    font-size: 16px;
+    width: 6.6rem;
+    height: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel button svg {
+    margin: 0px 5px;
+}
+
+.panel p {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Sometype Mono", monospace;
+}
+
+.panel p span {
+    font-weight: 500;
+    font-size: 20px;
+    color: #7A19A1;
+}
+
+.divider {
+    width: 80%;
+    height: 2px;
+    border-bottom: 1px solid #23292E;
+}
+
+.info {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.info h1 {
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: #007FFF;
+    font-size: 20px;
+}
+
+.info p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+    flex-direction: column;
+
+}
+
+.info p label {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 10px;
+    color: rgb(153, 152, 152);
+}
+
+.info p label svg {
+    font-size: 15px;
+    color: rgb(153, 152, 152);
+}
+
+.friends {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(17, 17, 17, 0.726);
+    overflow-y: scroll;
+    width: 70%;
+    height: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frnd img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.close {
+    position: absolute;
+    height: max-content;
+    background: none;
+    border: none;
+    width: max-content;
+    outline: none;
+    z-index: 20;
+    right: 0px;
+    top: 0px;
+    margin: 20px;
+    transform: scale(1);
+}
+
+.close:hover {
+    background-color: inherit;
+    transform: scale(1.1);
+}
+
+.list {
+    padding: 40px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    background-color: #14181B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.frnd {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    border-bottom: 1px solid grey;
+}
+
+.frnd h1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    color: #007FFF;
+}
+
+.frnd button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 16px;
+}
+
+.alt {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+@media screen and (max-width:800px) {
+    .intro img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .alt {
+        font-size: 25px;
+    }
+
+    .panel {
+        gap: 10px;
+    }
+
+    .panel button {
+        min-width: max-content;
+        width: 6.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .panel button {
+        font-size: 15px;
+        width: 6rem;
+        height: 2.3rem;
+    }
+
+    .alt {
+        font-size: 20px;
+    }
+}

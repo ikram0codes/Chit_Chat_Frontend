@@ -1,0 +1,31 @@
+.group-page {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.mob-menu {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .main-page {
+        display: grid;
+        grid-template-rows: 90% 10%;
+    }
+
+    .mob-menu {
+        width: 100%;
+        display: block;
+    }
+
+}
